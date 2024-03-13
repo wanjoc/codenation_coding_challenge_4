@@ -14,12 +14,12 @@ testButton.addEventListener("click", function () {
   // - Depending on the value of this number, different actions will occur and a message will be displayed on the web page.:
 
   // 1. If the number is less than 30
-  //  - The message should read: "The number is less than 30."
+  //  - The message should read: "The number is less than 30 🥶."
   // 2. If the number is between 30 and 69,
-  //  - The message should read: "The number is between 30 and 69."
+  //  - The message should read: "The number is between 30 and 69 😌."
 
   // 3. If the number is 70 or greater
-  //  - The message should read: "The number is 70 or greater."
+  //  - The message should read: "The number is 70 or greater 🥵."
 
   // Extensions:
   //  - Try modifying the conditions or the actions taken (such as changing the text or adding new conditions).
