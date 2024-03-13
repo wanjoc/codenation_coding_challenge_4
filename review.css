@@ -1,0 +1,67 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #e0f7fa;
+    /* Light teal background */
+    color: #272727;
+    margin: 0;
+    padding: 40px;
+    line-height: 1.6;
+}
+
+h1 {
+    color: #0080ff;
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 2.8em;
+}
+
+#test-button {
+    display: block;
+    width: 250px;
+    margin: 0 auto 50px;
+    padding: 15px 20px;
+    background-color: #17d3ff;
+    color: white;
+    border: 2px solid transparent;
+    /* Transparent border for hover effect */
+    border-radius: 20px;
+    /* Rounded corners */
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s, transform 0.2s, border-color 0.3s;
+}
+
+#test-button:hover {
+    background-color: #24c7ed;
+    /* Darker shade on hover */
+    border-color: #fee975;
+    /* Bright yellow border */
+    transform: translateY(-3px);
+}
+
+#container {
+    border: 3px solid #ffaa7b;
+    padding: 30px;
+    background-color: #ffffff;
+    width: 80%;
+    margin: 0 auto 50px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+#emoji {
+  font-size: 2.8em;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+
+    #testButton,
+    #result {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
