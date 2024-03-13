@@ -24,6 +24,7 @@ testButton.addEventListener("click", function () {
   // Copy/paste these two lines of code below in each condition
   // whatsYourGuess.style.display = "none";
   // guessInput.style.display = "none";
+  // testButton.style.display = "none";
 
   // Extensions:
   //  - Try modifying the conditions or the actions taken (such as changing the text or adding new conditions).
