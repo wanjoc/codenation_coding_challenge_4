@@ -15,7 +15,7 @@ h1 {
     font-size: 2.8em;
 }
 
-#test-button {
+.test-button {
     display: block;
     width: 250px;
     margin: 0 auto 50px;
@@ -31,7 +31,7 @@ h1 {
     transition: background-color 0.3s, transform 0.2s, border-color 0.3s;
 }
 
-#test-button:hover {
+.test-button:hover {
     background-color: #24c7ed;
     /* Darker shade on hover */
     border-color: #fee975;
@@ -50,17 +50,13 @@ h1 {
     border-radius: 15px;
 }
 
-#emoji {
-  font-size: 2.8em;
-}
-
 @media (max-width: 600px) {
     body {
         padding: 20px;
     }
 
-    #testButton,
-    #result {
+    .testButton,
+    .result {
         width: 100%;
         margin-bottom: 30px;
     }

@@ -1,8 +1,9 @@
-let testButton = document.querySelector("#test-button");
-let whatsYourGuess = document.querySelector("#whats-your-guess");
-let guessInput = document.querySelector("#guess-input");
-let result = document.querySelector("#result");
-let guessedSentence = document.querySelector("#guessed-sentence");
+let testButton = document.querySelector(".test-button");
+let whatsYourGuess = document.querySelector(".whats-your-guess");
+let guessInput = document.querySelector(".guess-input").value;
+let result = document.querySelector(".result");
+let guessSentence = document.querySelector(".guessed-sentence");
+
 
 testButton.addEventListener("click", function () {
   let randomNumber = Math.floor(Math.random() * 100); // Generates a random number between 0 and 99
@@ -28,16 +29,16 @@ testButton.addEventListener("click", function () {
     result.innerHTML = "The number is less than 30" + "🥶.";
     whatsYourGuess.style.display = "none";
     guessInput.style.display = "none";
-    guessedSentence.innerHTML = defaultGuessSentencePrefix + guessInput.value;
+    guessedSentence.innerHTML = defaultGuessSentencePrefix + guessInput;
   } else if (randomNumber >= 30 && randomNumber <= 69) {
     result.innerHTML = "The number is between 30 and 69 " + "😌.";
     whatsYourGuess.style.display = "none";
     guessInput.style.display = "none";
-    guessedSentence.innerHTML = defaultGuessSentencePrefix + guessInput.value;
+    guessedSentence.innerHTML = defaultGuessSentencePrefix + guessInput;
   } else {
     result.innerHTML = "The number is 70 or greater" + "🥵.";
     whatsYourGuess.style.display = "none";
     guessInput.style.display = "none";
-    guessedSentence.innerHTML = defaultGuessSentencePrefix + guessInput.value;
+    guessedSentence.innerHTML = defaultGuessSentencePrefix + guessInput;
   }
 });

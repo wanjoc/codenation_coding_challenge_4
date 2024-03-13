@@ -1,8 +1,8 @@
-let testButton = document.querySelector("#test-button");
-let whatsYourGuess = document.querySelector("#whats-your-guess");
-let guessInput = document.querySelector("#guess-input");
-let result = document.querySelector("#result");
-let guessSentence = document.querySelector("#guessed-sentence");
+let testButton = document.querySelector(".test-button");
+let whatsYourGuess = document.querySelector(".whats-your-guess");
+let guessInput = document.querySelector(".guess-input").value;
+let result = document.querySelector(".result");
+let guessSentence = document.querySelector(".guessed-sentence");
 
 testButton.addEventListener("click", function () {
   let randomNumber = Math.floor(Math.random() * 100); // Generates a random number between 0 and 99
