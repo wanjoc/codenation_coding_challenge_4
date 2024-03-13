@@ -1,8 +1,9 @@
 let testButton = document.querySelector(".test-button");
 let whatsYourGuess = document.querySelector(".whats-your-guess");
-let guessInput = document.querySelector(".guess-input").value;
 let result = document.querySelector(".result");
-let guessSentence = document.querySelector(".guessed-sentence");
+let guessedSentence = document.querySelector(".guessed-sentence");
+let guessInput = document.querySelector(".guess-input");
+let guessInputValue = guessInput.value;
 
 
 testButton.addEventListener("click", function () {
@@ -15,12 +16,16 @@ testButton.addEventListener("click", function () {
   // - Depending on the value of this number, different actions will occur and a message will be displayed on the web page.:
 
   // 1. If the number is less than 30
-  //  - The message should read: "The number is less than 30 🥶."
+  //  - The message should read: "The number is less than 30 🥶. You guessed {your input}
   // 2. If the number is between 30 and 69,
-  //  - The message should read: "The number is between 30 and 69 😌."
+  //  - The message should read: "The number is between 30 and 69 😌. You guessed {your input}"
 
   // 3. If the number is 70 or greater
-  //  - The message should read: "The number is 70 or greater 🥵."
+  //  - The message should read: "The number is 70 or greater 🥵. You guessed {your input}"
+
+  // Copy/paste these two lines of code below in each condition
+  // whatsYourGuess.style.display = "none";
+  // guessInput.style.display = "none";
 
   // Extensions:
   //  - Try modifying the conditions or the actions taken (such as changing the text or adding new conditions).
@@ -29,16 +34,16 @@ testButton.addEventListener("click", function () {
     result.innerHTML = "The number is less than 30" + "🥶.";
     whatsYourGuess.style.display = "none";
     guessInput.style.display = "none";
-    guessedSentence.innerHTML = defaultGuessSentencePrefix + guessInput;
+    guessedSentence.innerHTML = defaultGuessSentencePrefix + guessInputValue;
   } else if (randomNumber >= 30 && randomNumber <= 69) {
     result.innerHTML = "The number is between 30 and 69 " + "😌.";
     whatsYourGuess.style.display = "none";
     guessInput.style.display = "none";
-    guessedSentence.innerHTML = defaultGuessSentencePrefix + guessInput;
+    guessedSentence.innerHTML = defaultGuessSentencePrefix + guessInputValue;
   } else {
     result.innerHTML = "The number is 70 or greater" + "🥵.";
     whatsYourGuess.style.display = "none";
     guessInput.style.display = "none";
-    guessedSentence.innerHTML = defaultGuessSentencePrefix + guessInput;
+    guessedSentence.innerHTML = defaultGuessSentencePrefix + guessInputValue;
   }
 });
