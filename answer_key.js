@@ -3,7 +3,6 @@ let whatsYourGuess = document.querySelector(".whats-your-guess");
 let result = document.querySelector(".result");
 let guessedSentence = document.querySelector(".guessed-sentence");
 let guessInput = document.querySelector(".guess-input");
-let guessInputValue = guessInput.value;
 
 
 testButton.addEventListener("click", function () {
@@ -31,19 +30,22 @@ testButton.addEventListener("click", function () {
   //  - Try modifying the conditions or the actions taken (such as changing the text or adding new conditions).
   let defaultGuessSentencePrefix = "You guessed ";
   if (randomNumber < 30) {
-    result.innerHTML = "The number is less than 30" + "🥶.";
+    result.innerHTML = "The temperature is less than 30" + "🥶.";
     whatsYourGuess.style.display = "none";
     guessInput.style.display = "none";
-    guessedSentence.innerHTML = defaultGuessSentencePrefix + guessInputValue;
+    testButton.style.display = "none";
+    guessedSentence.innerHTML = defaultGuessSentencePrefix + guessInput.value;
   } else if (randomNumber >= 30 && randomNumber <= 69) {
-    result.innerHTML = "The number is between 30 and 69 " + "😌.";
+    result.innerHTML = "The temperature is between 30 and 69 " + "😌.";
     whatsYourGuess.style.display = "none";
     guessInput.style.display = "none";
-    guessedSentence.innerHTML = defaultGuessSentencePrefix + guessInputValue;
+    testButton.style.display = "none";
+    guessedSentence.innerHTML = defaultGuessSentencePrefix + guessInput.value;
   } else {
-    result.innerHTML = "The number is 70 or greater" + "🥵.";
+    result.innerHTML = "The temperature is 70 or greater" + "🥵.";
     whatsYourGuess.style.display = "none";
     guessInput.style.display = "none";
-    guessedSentence.innerHTML = defaultGuessSentencePrefix + guessInputValue;
+    testButton.style.display = "none";
+    guessedSentence.innerHTML = defaultGuessSentencePrefix + guessInput.value;
   }
 });
